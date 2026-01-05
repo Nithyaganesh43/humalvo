@@ -1,0 +1,21 @@
+# Backend API
+flask
+flask-cors
+
+# Microphone input
+sounddevice
+soundfile
+
+# Audio processing
+librosa
+numpy
+
+# Noise filtering
+noisereduce
+
+# Voice Activity Detection
+torch
+silero-vad
+
+# Speech-to-text
+faster-whisper
