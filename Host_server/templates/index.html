@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Service Route Table</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #0f172a;
+            color: #e5e7eb;
+            padding: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background: #020617;
+        }
+        th, td {
+            border: 1px solid #334155;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #1e293b;
+        }
+        tr:hover {
+            background: #1e293b;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🌐 Host Server – Route Table</h1>
+
+<table>
+    <tr>
+        <th>Service</th>
+        <th>IP</th>
+        <th>Port</th>
+        <th>Route</th>
+        <th>Last Seen (UTC)</th>
+        <th>Full URL</th>
+    </tr>
+
+    {% for s in services %}
+    <tr>
+        <td>{{ s.service_name }}</td>
+        <td>{{ s.ip }}</td>
+        <td>{{ s.port }}</td>
+        <td>{{ s.route }}</td>
+        <td>{{ s.last_seen }}</td>
+        <td>
+            http://{{ s.ip }}:{{ s.port }}{{ s.route }}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
