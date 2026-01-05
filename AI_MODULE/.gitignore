@@ -1,0 +1,10 @@
+venv/
+model/
+__pycache__/
+*.pyc
+*.log
+*.pt
+*.bin
+*.safetensors
+*.pkl
+.env
