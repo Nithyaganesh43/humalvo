@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice Assistant Frontend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎙️ Voice Assistant</h1>
+
+        <button id="toggleBtn" class="start">
+            Start Listening
+        </button>
+
+        <div class="command-box">
+            <h3>Latest Command</h3>
+            <p id="latestCommand">—</p>
+        </div>
+
+        <div class="conversation">
+            <h3>Conversation History</h3>
+            <div id="conversationLog"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button.start {
+    background-color: #22c55e;
+    color: #022c22;
+}
+
+button.stop {
+    background-color: #ef4444;
+    color: #fff;
+}
+
+.command-box {
+    background: #020617;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#latestCommand {
+    font-size: 18px;
+    color: #38bdf8;
+}
+
+.conversation {
+    background: #020617;
+    padding: 15px;
+    border-radius: 8px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.user {
+    background: #1e293b;
+}
+
+.ai {
+    background: #0f766e;
+}
